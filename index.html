@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .center-all-div {
+      display: flex;
+      justify-content: center;
+      background: blanchedalmond;
+
+    }
+    
+    .container {
+      display: flex;
+      width: 60%;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      background: #ffff;
+
+
+
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .left {
+      background: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      padding: 3rem;
+    }
+
+    .right .heading {
+      letter-spacing: 4px;
+      color: #89898a;
+      font-family: Arial;
+    }
+
+    .right h1 {
+      padding: 20px 0px;
+      font-size: 3rem;
+
+    }
+
+    .right p {
+      padding-bottom: 20px;
+      color: #89898a;
+      font-family: Arial;
+      line-height: 1.4;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .add-cart-sec {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      background: #2f6350;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      cursor: pointer;
+    }
+
+    .real-price {
+      font-size: 3rem;
+      font-weight: bolder;
+      color: #2f6350;
+    }
+
+    .add-cart-content {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffff;
+    }
+
+    .discount-price {
+      font-family: arial;
+      text-decoration: line-through;
+      color: #89898a;
+    }
+
+
+
+    /* mobail size 370px */
+
+    @media screen and (max-width: 370px) {
+      .container {
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        background: #ffff;
+      }
+
+      .right h1 {
+        font-size: 2.5rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge,
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+  <div class="center-all-div">
+    <div class="container">
+      <div class="left">
+        <img src="./images/image-product-desktop.jpg" alt="">
+      </div>
+      <div class="right">
+        <span class="heading">PERFUME</span>
+        <h1>Gabrielle <br> Essence Eau De Parfum</h1>
+        <p> A floral, solar and voluptuous <br> interpretation composed by Olivier Polge,
+          Perfumer-Creator for the <br> House of CHANEL.</p>
+        <div class="price">
+          <div class="real-price">
+            <span>$149.99</span>
+          </div>
+          <div class="discount-price">
+            <span>$169.99</span>
+          </div>
+        </div>
+        <div class="add-cart-sec">
+          <div class="add-cart-icon">
+            <img src="./images/icon-cart.svg" alt="">
+          </div>
+          <div class="add-cart-content">
+            <span>Add to Cart</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
